@@ -15,7 +15,8 @@ const astroExpressiveCodeOptions = {
 export default defineConfig({
   integrations: [tailwind(), sitemap(), expressiveCode(astroExpressiveCodeOptions)],
   experimental: {
-    assets: true
+    assets: true,
+    viewTransitions: true
   },
   image: {
     service: sharpImageService()
